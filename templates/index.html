@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabric Classification</title>
+    <style>
+
+        body {
+            font-family: system-ui;
+        }
+        h1, p, button {
+            text-align: center;
+            font-family: system-ui;
+        }
+        
+        .centered-text {
+            text-align: center;
+            margin-right: 200px;
+            margin-left: 200px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+
+        }
+        button {
+            padding: 10px 20px;
+            
+        }
+    
+        .container2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            margin-top: 50px;
+        }
+        #imageContainer {
+            text-align: center;
+            margin-top: 50px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <h1 class="centered-text">Fabric Classification</h1>
+    <p class="centered-text">One of the hardest part of recylcing clothing is identifying the type of fabric used to make the garmet.
+        With fast fashion becoming a bigger problem, the need for efficient fabric classification tools has become extremely necessary. 
+        This is a simplified version of a Fabric Classification program. Given an image of cloth, this tool can identity if the fabric 
+        is denim, polyester, or linen.</p>
+
+
+    <div class="container2"> 
+        <p> Click to choose an image</p>
+    </div>
+    
+
+
+    <div id="imageContainer">
+        <img id="randomImage" src="test_images/testimage1.jpg" alt="Fabric Image">
+    </div>
+    <button id="randomizeButton">Randomize</button>
+    <script src="script.js"></script>
+
+
+
+
+
+</body>
+</html>
