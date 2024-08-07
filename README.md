@@ -1,6 +1,6 @@
 # Fabric Classification
 
-Fabric Classification is a web application that utilizes a CNN to classify a piece of cloth as denim, linen, or polyester. The model used is a Tensorflow Keras Sequental Model. The front end is written in HTML and JavaScript, and the backend is run on flask. 
+Fabric Classification is a web application that utilizes a CNN to classify a piece of cloth as denim, linen, or polyester. The model used is a Tensorflow Keras Sequential Model. The front end is written in HTML and JavaScript, and the backend is run on flask. 
 
 ## Motivation
 
