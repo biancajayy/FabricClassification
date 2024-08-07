@@ -62,6 +62,16 @@
             height: 100%;
         }
 
+        #identifyFabricButton {
+            display: none;
+        }
+        #Classification {
+            display: none;
+        }
+        #Accuracy {
+            display: none;
+        }
+
         
 
     </style>
@@ -90,11 +100,12 @@
 
 
     <div class="button-container">
-        <button onclick="indentifyFabric()"> Indentify Fabric </button>
+        <button id="identifyFabricButton" onclick="identifyFabric()">Identify Fabric</button>
     </div>
+    <script type="text/javascript"  src="{{url_for('static', filename="script.js")}}"></script>
 
 
-
-
+    <p class="centered-text" id="Classification">Fabric: </p>
+    <p class="centered-text" id="Accuracy">Accuracy: </p>
 </body>
 </html>
