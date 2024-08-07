@@ -25,7 +25,7 @@ One of the hardest parts of recycling clothing is identifying the fabric used to
 
 1. **Clone the repository:**
 
-   ```bash
+```bash
    git clone https://github.com/your-username/fabric-classification.git
    ```
 2. **Go into the repository:**
