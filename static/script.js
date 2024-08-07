@@ -3,7 +3,10 @@ let chosenImageIndex = 0;
 
 function changeImage() {
     var images = document.getElementById('testimages');
+
+    // TODO: don't hard code this number
     let numImages = 29;
+    
     randomIndex = Math.floor(Math.random() * numImages) + 1;  // Ensure the random index is between 1 and 30
     images.src = `static/test_images/testimage${randomIndex}.jpg`;
     document.getElementById('identifyFabricButton').style.display = 'none';
@@ -32,6 +35,7 @@ async function identifyFabric() {
 
     // update text content of category and accuracy
     const result = await response.json();
+
     document.getElementById('Classification').style.display = 'block';
     document.getElementById('Accuracy').style.display = 'block';
     document.getElementById('Classification').textContent = `Fabric: ${result.category}`;
