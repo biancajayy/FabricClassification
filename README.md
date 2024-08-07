@@ -27,11 +27,11 @@ One of the hardest parts of recycling clothing is identifying the fabric used to
 
    ```bash
    git clone https://github.com/your-username/fabric-classification.git
-
+   ```
 2. **Go into the repository:**
  ```bash
    cd fabric-classification
-
+   ```
 3. **Run the app:**
 
 ```bash
@@ -41,7 +41,7 @@ One of the hardest parts of recycling clothing is identifying the fabric used to
 
    # Method 2:
    python3 -m flask --app app run
-
+```
 4. **Contributors:**
 Bianca Jayaraman
 
