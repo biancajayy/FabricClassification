@@ -27,4 +27,30 @@ One of the hardest parts of recycling clothing is identifying the fabric used to
 
    ```bash
    git clone https://github.com/your-username/fabric-classification.git
+
+2. **Go into the repository:**
+ ```bash
    cd fabric-classification
+
+3. **Run the app:**
+
+```bash
+   # Depending on how Flask is set up on your device, the app can be run with one of these two commands.
+   # Method 1:
+   flask --app app run
+
+   # Method 2:
+   python3 -m flask --app app run
+
+4. **Contributors:**
+Bianca Jayaraman
+
+
+
+
+   
+
+
+
+
+   
