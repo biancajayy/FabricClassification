@@ -42,7 +42,7 @@ One of the hardest parts of recycling clothing is identifying the fabric used to
    # Method 2:
    python3 -m flask --app app run
 ```
-4. **Contributors:**
+## Contributors
 Bianca Jayaraman
 
 
