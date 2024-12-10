@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabric Classification</title>
+    <style>
+
+        body {
+            font-family: system-ui;
+        }
+        h1, p, button {
+            text-align: center;
+            font-family: system-ui;
+        }
+        
+        .centered-text {
+            text-align: center;
+            margin-right: 200px;
+            margin-left: 200px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            align-items: center;
+        }
+        
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+        }
+    
+        .container2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            margin-top: 50px;
+        }
+
+        .imageContainer {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            height: 200px;
+            width: 200px;
+            object-fit: scale-down;
+        }
+        .imageContainer img{
+            width: 100%;
+            height: 100%;
+        }
+
+        #identifyFabricButton {
+            display: none;
+        }
+        #Classification {
+            display: none;
+        }
+        #Accuracy {
+            display: none;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <h1 class="centered-text">Fabric Classification</h1>
+    <p class="centered-text">One of the hardest parts of recycling clothing is identifying the fabric used to make the garment.
+        With fast fashion becoming a bigger problem, efficient fabric classification tools have become extremely necessary. 
+        This is a simplified version of a Fabric Classification program. Given an image of cloth, this tool can identify whether the fabric 
+        is denim, polyester, or linen.</p>
+
+
+    <div class="container2"> 
+        <p> Click to choose an image</p>
+    </div>
+    
+    <div class="imageContainer">
+        <img src="{{url_for('static', filename="test_images/testimage1.jpg")}}" id ='testimages'>
+    </div>
+
+    <div class="button-container">
+        <button onclick="changeImage()"> New Image </button>
+        <button onclick="chooseImage()"> Choose </button>
+    </div>
+    <script type="text/javascript"  src="{{url_for('static', filename="script.js")}}"></script>
+
+
+    <div class="button-container">
+        <button id="identifyFabricButton" onclick="identifyFabric()">Identify Fabric</button>
+    </div>
+    <script type="text/javascript"  src="{{url_for('static', filename="script.js")}}"></script>
+
+
+    <p class="centered-text" id="Classification">Fabric: </p>
+    <p class="centered-text" id="Accuracy">Accuracy: </p>
+</body>
+</html>
